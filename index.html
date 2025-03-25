@@ -22,6 +22,10 @@
         p {
             font-family: 'Playfair', sans-serif;
         }
+
+        h1 {
+            font-family: 'roboto', sans-serif;
+        }
         .header-fixed {
             transition: all 0.3s ease-in-out;
             background-color: rgba(148, 158, 173, 0.8);
@@ -44,15 +48,15 @@
 <body class="bg-gray-100 text-gray-900">
     
     <!-- Header -->
-   <header id="header" class="bg-gray-300 text-black py-4 fixed w-full top-0 z-50 header-fixed border-b-2 border-black">
+   <header id="header" class="bg-stone-300 text-cyan-900 p-4 fixed w-full top-0 z-50 header-fixed border-b border-black">
         <div class="container mx-auto flex justify-between items-center px-6">
             <h1 class="text-lg text-gray-600 ">navegue pelo menu</h1>
-            <button id="menu-btn" class="md:hidden text-gray-600 text-2xl">☰</button>
-            <nav id="menu" class="absolute md:static top-16 left-0 w-full bg-gray-300 md:bg-transparent text-center md:text-left transition-all duration-300 ease-in-out menu-closed">
+            <button id="menu-btn" class="md:hidden text-cyan-900 text-2xl">☰</button>
+            <nav id="menu" class="absolute md:static top-16 left-0 w-full bg-stone-300 md:bg-transparent text-center md:text-left transition-all duration-300 ease-in-out menu-closed border-b border-black">
                 <ul class="flex flex-col md:flex-row md:space-x-6 w-full">
                     <li><a href="#sobre" class="block py-2 px-4 md:py-0 hover:underline">Sobre</a></li>
-                    <li><a href="#servicos" class="block py-2 px-4 md:py-0 hover:underline">Serviços</a></li>
-                    <li><a href="#depoimentos" class="block py-2 px-4 md:py-0 hover:underline">Depoimentos</a></li>
+                    <li><a href="#servicos" class="block py-2 px-4 md:py-0 hover:underline">Psicologia Clínica</a></li>
+                    <li><a href="#depoimentos" class="block py-2 px-4 md:py-0 hover:underline">Psicologia Jurídica</a></li>
                     <li><a href="#contato" class="block py-2 px-4 md:py-0 hover:underline">Contato</a></li>
                 </ul>
             </nav>
@@ -60,30 +64,28 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="flex items-center justify-center text-center min-h-screen bg-gray-200 text-white px-4 border-b border-black">
+    <section class="flex items-center justify-center text-center min-h-screen bg-gray-200 text-white px-4 border-b border-black" style="background-image: url('/images/background.png'); background-size: cover; background-position: center;">
         <div class="flex flex-col items-center justify-center text-center">
-            <img src="/images/psychology.png" class="h-10">
-            <h2 class="text-6xl text-black ">ANA CLARA DADA</h2>
-            <p class="mt-4 text-2xl text-gray-700">psicóloga</p>
+            <img src="/images/psychology.png" class="h-10 invert mb-5">
+            <h2 class="text-6xl text-white">ANA CLARA DADA</h2>
+            <p class="mt-4 text-2xl text-stone-400">psicóloga</p>
         </div>      
     </section>
     
 
     <!-- Sobre -->
-    <section id="sobre" class="container mx-auto px-4 border-b border-black">
+    <section id="sobre" class="container mx-auto px-4 border-b border-black bg-stone-300">
         <div class="flex flex-col items-center">
             <img src="/images/Ana-Clara2.JPG" class="mt-36 mb-16 max-w-[70%] h-auto shadow-2xl border border-black">
             
-            <h2 class="text-4xl text-black ">SOBRE MIM</h2>
-        </div>
-    
-        <p class="text-gray-800 max-w-2xl mx-auto m-10 text-left p-3">
+            <h2 class="text-4xl text-cyan-900 font-semibold">SOBRE MIM</h2>
+        </div> 
+        <h1 class="text-lg text-gray-800 max-w-2xl mx-auto m-10 text-left p-3 ">
             Olá, meu nome é Ana Clara Dada de Souza.<br><br>
             Trabalho tanto com a Psicologia dentro do contexto clínico quanto no contexto jurídico.<br><br>
             Sendo assim, decidi criar esse espaço para explicar um pouco sobre como meu trabalho funciona.<br><br>
             Sinta-se à vontade para tirar suas dúvidas comigo caso elas surjam.
-        </p>
-    
+        </h1>
         <div class="flex justify-center">
             <a href="https://wa.me/43991402805" target="_blank" class="inline-block bg-white text-black py-2 px-16 rounded shadow-md border border-black mb-10">
                 Fale diretamente comigo
@@ -92,65 +94,80 @@
     </section>
 
 <!-- Serviços -->
-<section id="sobre" class="container mx-auto px-6 py-12 border-b border-black">
+<section id="servicos" class="bg-[#2B4060] container mx-auto px-6 py-12 border-b border-black" >
     <div class="flex flex-col items-center text-center">
-        <img src="/images/Ana-Clara4.JPG" class="mt-36 mb-16 max-w-[70%] h-auto shadow-2xl border border-black">            
-        <h2 class="text-3xl font-bold text-black mb-6">PSICOLOGIA CLÍNICA</h2>
+        <img src="/images/bg2.JPG" class="mt-16 mb-16 max-w-[70%] h-auto shadow-2xl border border-black">            
+        <h2 class="text-4xl font-semibold text-stone-100 mb-6">PSICOLOGIA <br> CLÍNICA</h2>
     </div>
 
-    <div class="text-gray-800 max-w-2xl mx-auto text-left space-y-6 px-4">
-        <h2 class="text-2xl font-semibold">Psicoterapia Individual</h2>
-        <p>
+    <div class="text-gray-800 max-w-2xl mx-auto text-left space-y-6 px-4  text-white">
+        <h2 class="text-2xl text-stone-100">Psicoterapia Individual</h2>
+        <h1 class="text-stone-300">
             A psicoterapia é um processo de autoconhecimento e transformação. Durante as sessões, você será guiado(a) a compreender suas dificuldades, aprender novas formas de lidar com elas e fortalecer recursos internos para uma vida mais equilibrada.
-        </p>
-        <p>
+        </h1>
+        <h1 class="text-stone-300">
             Atuo com a Terapia Cognitivo-Comportamental (TCC), abordagem baseada em evidências científicas que analisa pensamentos e comportamentos. Também integro práticas de terapias comportamentais contextuais, como FAP e ACT.
-        </p>
-        <p>
+        </h1>
+        <h1 class="text-stone-300">
             Atendo online adolescentes, adultos e idosos. As sessões duram 50 minutos, são semanais e adaptadas às suas necessidades.
-        </p>
+        </h1>
     </div>
 
-    <div class="text-gray-800 max-w-2xl mx-auto text-left space-y-6 px-4 mt-12">
-        <h2 class="text-2xl font-semibold">Avaliação Neuropsicológica</h2>
-        <p>
+    <div class="text-gray-800 max-w-2xl mx-auto text-left space-y-6 px-4 mt-12  text-white">
+        <h2 class="text-2xl text-stone-100">Avaliação Neuropsicológica</h2>
+        <h1 class="text-stone-300">
             A Avaliação Neuropsicológica investiga o funcionamento cognitivo e emocional do paciente, identificando tanto as capacidades preservadas quanto as áreas comprometidas.
-        </p>
-        <h2 class="text-xl font-bold text-black">Benefícios</h2>
-        <ul class="list-disc list-inside space-y-2">
+        </h1>
+        <h2 class="text-2xl text-stone-100">Benefícios</h2>
+        <ul class="list-disc list-inside space-y-2 text-stone-300">
             <li>Identifica pontos fortes e dificuldades cognitivas e emocionais.</li>
             <li>Fornece dados essenciais para um tratamento personalizado.</li>
         </ul>
-        <h2 class="text-xl font-bold text-black">Indicações</h2>
-        <ul class="list-disc list-inside space-y-2">
+        <h2 class="text-2xl text-stone-100">Indicações</h2>
+        <ul class="list-disc list-inside space-y-2 text-stone-300">
             <li>TEA, TDAH, Transtornos de Aprendizagem</li>
             <li>Demências e Avaliação do QI</li>
         </ul>
-        <a href="https://wa.me/43991402805" target="_blank" class="inline-block mt-4 bg-black text-white py-2 px-6 rounded-lg shadow-md hover:bg-gray-800 text-center">
-            Agendar conversa inicial
-        </a>
     </div>
 </section>
 
-<section id="psicologia-juridica" class="container mx-auto px-6 py-12 border-b border-black">
+<section id="depoimentos" class="bg-stone-300 container mx-auto px-6 py-12 border-b border-black" >
     <div class="flex flex-col items-center text-center">
-        <img src="/images/juridico.JPG" class="mt-36 mb-16 max-w-[70%] h-auto shadow-2xl border border-black">
-        <h2 class="text-3xl text-black mb-6">PSICOLOGIA JURÍDICA</h2>
+        <img src="/images/juridico.JPG" class="mt-16 mb-16 max-w-[70%] h-auto shadow-2xl border border-black">
+        <h2 class="text-4xl font-semibold text-[#2B4060] mb-6">PSICOLOGIA JURÍDICA</h2>
     </div>
-    <p class="text-gray-800 max-w-2xl mx-auto text-left px-4">
+    <h1 class="text-gray-800 max-w-2xl mx-auto text-left px-4">
         Atuo na Psicologia Jurídica de forma autônoma, colaborando com o sistema de justiça em diferentes demandas que envolvem o comportamento humano em contextos legais. Sou Perita habilitada pelo TJPR e Assistente Técnica Judicial contratada por partes processuais.
-    </p>
+    </h1>
 </section>
 
 <!-- Contato -->
-<section id="contato" class="bg-gray-700 text-white py-12 text-center px-6">
-    <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
-    <p class="mb-4">Agende sua consulta ou tire suas dúvidas.</p>
+<section id="contato" class="bg-[#2B4060] text-white py-12 text-center px-6">
+    <h2 class="text-4xl font-semibold mb-6">Entre em Contato</h2>
+    
+    <div class="flex flex-col gap-4 items-left px-10">
+        <div class="flex items-center gap-3">
+            <img src="images/icons/whatsapp.png" class="invert h-5" alt="WhatsApp">
+            <a href="https://wa.me/43991402805" class="text-g">+55 (43) 99140-2805</a>
+        </div>
+        
+        <div class="flex items-center gap-3">
+            <img src="images/icons/instagram.png" class="invert h-5" alt="Instagram">
+            <a href="https://instagram.com/psijuridica.anadada" target="_blank" class="text-g underline">Instagram</a>
+        </div>
+        
+        <div class="flex items-center gap-3">
+            <img src="images/icons/linkedin.png" class="invert h-5" alt="LinkedIn">
+            <a href="https://linkedin.com/in/ana-clara-dada-de-souza-7ba086232/" target="_blank" class="text-g underline">LinkedIn</a>
+        </div>
+    </div>
 </section>
+
+
 
 <!-- Footer -->
 <footer class="bg-gray-900 text-white text-center py-6 px-6">
-    <p>&copy; 2025 Ana Clara Dada - Todos os direitos reservados.</p>
+    <h1>&copy; 2025 Ana Clara Dada - Todos os direitos reservados.</h1>
 </footer>
 
     <script>
