@@ -205,6 +205,16 @@
                 menu.classList.add("menu-closed");
             }
         });
+
+        document.addEventListener("click", (e) => {
+            if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                // Verifica se o clique foi fora do menu e do botão
+                if (menu.classList.contains("menu-open")) {
+                    menu.classList.remove("menu-open");
+                    menu.classList.add("menu-closed");
+                }
+            }
+        });
     </script>
 
 </body>
